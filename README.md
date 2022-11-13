@@ -51,3 +51,13 @@ zh-CN:
   "Get Item Chs Name Failed": "# 获取失败 #"
 }
 ```
+
+## Developer API
+To call the functions in this API your plugin needs to get the plugin reference:
+```
+[PluginReference] Plugin ItemChsName;
+```
+You can now call functions such as ServerGetItemChsName to get value:
+```
+ItemChsName?.Call("ServerGetItemChsName", strItemCode);
+```
